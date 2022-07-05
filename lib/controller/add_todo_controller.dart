@@ -74,7 +74,7 @@ class AddTodoController extends GetxController {
   }
 
   validateData() async {
-    if (title.value == "") {
+    if (title.value == "" || title.value.isBlank!) {
       Get.snackbar(
         "Title cannot be empty",
         "Please enter title",
